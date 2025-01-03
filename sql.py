@@ -10,7 +10,6 @@ def set_db():
         )
     ''')
     conn.commit()
-    print(ctime(time()))
     cursor.execute("INSERT INTO time (time) VALUES ('" + ctime(time()) + "')")
     conn.commit()
 
